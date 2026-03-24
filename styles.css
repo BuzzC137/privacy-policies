@@ -259,6 +259,11 @@ body {
     box-shadow: 0 4px 12px rgba(88, 101, 242, 0.15);
 }
 
+.github-link:hover {
+    border-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
 /* Footer */
 .footer {
     text-align: center;
