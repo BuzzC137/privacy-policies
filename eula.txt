@@ -1,0 +1,218 @@
+End User License Agreement (EULA)
+
+Last Updated: March 2026
+
+By installing, accessing, or using Audiobook Hub (the “Software”), you agree to be bound by this End User License Agreement (“Agreement”). If you do not agree to these terms, do not install or use the Software.
+
+1. License Grant
+
+Subject to your compliance with this Agreement, Audiobook Hub grants you a limited, royalty-free, non-exclusive, non-transferable, and revocable license to install and use the Software solely for personal, non-commercial purposes.
+
+The Software is licensed, not sold. All rights not expressly granted are reserved.
+
+Certain components of the Software may include or rely on third party open-source libraries or tools. Those components are licensed under their respective licenses and not under this Agreement.
+
+2. Ownership
+
+The Software, including its structure, design, layout, code, and functionality, is owned by Audiobook Hub and is protected by applicable intellectual property laws.
+
+Except for the limited license granted in this Agreement, you are not granted any ownership rights in the Software.
+
+3. Restrictions
+
+You agree that you will not:
+
+Copy, modify, distribute, or create derivative works of the Software
+Reverse engineer, decompile, or attempt to extract source code except where permitted by law
+Use the Software for unlawful purposes
+Circumvent or attempt to bypass any technical limitations or protections
+Use the Software to build or support competing services
+Transfer, sublicense, lease, or resell the Software
+
+You agree to comply with all applicable laws and regulations when using the Software.
+
+4. Application Functionality
+
+Audiobook Hub is a content playback and aggregation tool that allows users to access, organize, and play audio content from external sources.
+
+The Software may support:
+
+Podcast discovery and playback
+RSS feed integration
+Public domain audiobook access
+External file playback
+Torrent or magnet-based downloads (if configured by the user)
+Custom user-defined content sources
+Optional premium features that enhance functionality or user experience
+
+Audiobook Hub does not host, store, or distribute content itself unless explicitly stated.
+
+5. Premium Features and Purchases
+
+The Software may offer optional paid features, including one-time purchases or subscriptions (“Premium Features”).
+
+Premium Features may include, but are not limited to:
+
+Advanced playback controls
+Enhanced user interface features
+Additional customization options
+Offline or extended functionality
+
+All purchases are processed through the platform provider (such as Google Play) and are subject to their respective terms and policies.
+
+By purchasing Premium Features, you agree that:
+
+Access is granted only to the account used for the purchase
+Pricing and availability may change at any time
+Certain features may be modified, improved, or discontinued
+
+Subscriptions:
+
+Automatically renew unless canceled through your platform account
+Can be managed or canceled through your platform provider
+Remain active until the end of the billing period after cancellation
+
+Audiobook Hub does not directly process payments and does not store payment information.
+
+6. Peer-to-Peer and Network Behavior
+
+If you use features involving peer-to-peer technologies (such as torrent-based downloads):
+
+Your device may download content from multiple external sources
+Your device may upload or share portions of files with other users
+Your network connection may be used to facilitate data transfer
+
+Only content that you explicitly access, download, or share will be involved in these processes.
+
+You acknowledge and consent to this behavior as part of the Software’s functionality.
+
+7. Updates and Modifications
+
+The Software may automatically check for, download, and install updates.
+
+These updates may include:
+
+bug fixes
+performance improvements
+feature changes or removals
+security updates
+
+You agree that updates may occur without additional notice and are part of the Software’s normal operation.
+Updates may also include changes to Premium Features, including additions, modifications, or removals.
+
+8. Third Party Software and Services
+
+The Software may rely on third party technologies, including:
+
+audio playback engines
+networking libraries
+metadata providers
+open-source components
+
+These are governed by their respective licenses.
+
+Audiobook Hub is not responsible for the performance, accuracy, or availability of third party services.
+
+9. Disclaimer of Warranty
+
+The Software is provided on an “as is” and “as available” basis.
+
+To the maximum extent permitted by law, Audiobook Hub disclaims all warranties, express or implied, including:
+
+merchantability
+fitness for a particular purpose
+non-infringement
+accuracy or reliability
+
+Audiobook Hub does not guarantee that:
+
+the Software will function without interruption
+the Software will be error-free
+content accessed through the Software will be accurate or safe
+downloads or streams will be free from harmful components
+
+Use of the Software is at your own risk.
+
+10. Limitation of Liability
+
+To the maximum extent permitted by law:
+
+Audiobook Hub shall not be liable for any indirect, incidental, special, or consequential damages, including:
+
+loss of data
+loss of content
+loss of profits
+device or system damage
+service interruptions
+
+In all cases, total liability shall not exceed fifty dollars (USD $50.00).
+
+Some jurisdictions do not allow certain limitations, so parts of this section may not apply to you.
+
+11. U.S. Government Users
+
+The Software is classified as commercial computer software.
+
+Any use by U.S. Government entities is subject to the restrictions set forth in this Agreement.
+
+12. Termination
+
+This Agreement is effective until terminated.
+
+Your rights under this Agreement will terminate automatically if you fail to comply with its terms.
+
+Upon termination:
+
+you must stop using the Software
+you must uninstall and remove all copies
+your license is immediately revoked
+access to Premium Features may also be revoked
+
+Audiobook Hub may terminate or suspend access at any time if necessary.
+
+13. Export Compliance
+
+You agree to comply with all applicable export laws and regulations.
+
+You may not use or export the Software in violation of any applicable laws.
+
+14. User-Controlled Content Access
+
+All content accessed through Audiobook Hub is initiated and controlled by the user.
+
+The Software only retrieves or interacts with content that you:
+
+explicitly request
+configure
+subscribe to
+or provide through external sources
+
+15. Governing Law
+
+This Agreement is governed by applicable laws in your jurisdiction, without regard to conflict of law principles.
+
+16. Changes to This Agreement
+
+Audiobook Hub may update or modify this Agreement at any time.
+
+Updated versions will be made available through:
+
+the application
+associated websites
+or distribution platforms
+
+Continued use of the Software after changes means you accept the updated Agreement.
+
+17. Entire Agreement
+
+This Agreement constitutes the entire agreement between you and Audiobook Hub regarding use of the Software.
+
+If any provision is found unenforceable, the remaining provisions will remain in effect.
+
+Failure to enforce any provision does not waive the right to enforce it later.
+
+18. Contact Information
+
+If you have any questions about this Agreement, you may contact:
+
+llsdevsteam@gmail.com

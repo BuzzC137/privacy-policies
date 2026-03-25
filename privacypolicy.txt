@@ -1,0 +1,224 @@
+Privacy Policy
+
+Last Updated: March 2026
+
+Audiobook Hub (“we,” “us,” or “our”) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and protect information when you use our mobile application and related services (the “Services”).
+
+This Privacy Policy should be read alongside our Terms of Use and End User License Agreement (EULA).
+
+1. Scope
+
+This Privacy Policy applies to all users of Audiobook Hub and covers information processed through:
+
+our mobile application
+related features and functionality
+communications with us
+
+For simplicity, these are collectively referred to as the “Services.”
+
+This Privacy Policy does not apply to third-party services or platforms that you access through the app.
+
+2. Information We Collect
+
+Audiobook Hub is designed to minimize data collection.
+
+2.1 Information You Provide
+
+We may collect limited information that you choose to provide, such as:
+
+email address (if you contact support)
+support requests or feedback
+any information you voluntarily include in communications
+
+We do not require account creation to use the app.
+
+2.2 Information Collected Automatically
+
+Audiobook Hub does not intentionally collect or store personal data on external servers.
+
+However, limited technical information may be processed locally on your device or through system-level services, such as:
+
+app version
+device type or operating system (used by the OS or platform)
+crash or error logs (if enabled by your device or platform)
+
+We do not use this information to identify individual users. 
+
+Audiobook Hub does not track users across apps, services, or websites and does not use analytics or advertising identifiers unless explicitly stated in future updates.
+
+2.3 Content and External Sources
+
+Audiobook Hub allows you to access content from external sources, including:
+
+RSS feeds
+podcast directories
+public domain libraries
+torrent or magnet links (if configured by you)
+direct file URLs or local files
+
+We do not collect, store, or monitor the content you access, except temporarily on your device as required for playback.
+
+2.4 Peer-to-Peer (Torrent) Functionality
+
+If you use torrent-based features:
+
+your IP address may be visible to other peers in the network
+your device may upload and download file data directly
+
+Audiobook Hub does not track, store, or log your file activity.
+
+2.5 Payments and Purchases
+
+Audiobook Hub may offer paid features, including subscriptions or one-time purchases.
+
+All payments are processed through third-party platforms such as Google Play.
+
+We do not collect or store:
+
+credit card information
+billing addresses
+payment credentials
+
+We may receive limited purchase-related information from the platform, such as:
+
+product identifiers
+purchase status (active, expired, or canceled)
+
+This information is used only to enable and manage access to paid features within the app.
+
+All payment and transaction data is handled by the platform provider (such as Google Play) in accordance with their own privacy policies. Audiobook Hub does not have access to full transaction details or personal billing information.
+
+2.6 Third-Party Data
+
+We may receive limited information from third-party services, such as:
+
+app store purchase confirmations
+platform-level notifications
+optional analytics or crash reporting tools (if implemented)
+
+These services operate under their own privacy policies.
+
+3. How We Use Information
+
+We use limited information only as necessary to:
+
+3.1 Provide the Services
+enable audio playback and features
+unlock paid features based on purchase status
+maintain app functionality
+
+3.2 Improve Performance
+fix bugs or crashes
+improve stability and usability
+
+3.3 Communicate With You
+respond to support requests
+provide important updates (if applicable)
+
+3.4 Security and Compliance
+detect misuse or abuse
+comply with legal obligations
+
+4. How We Share Information
+
+We do not sell, rent, or share your personal information for advertising or marketing purposes.
+
+We may share limited data only in the following situations:
+
+4.1 Service Providers
+
+If used, third-party providers (such as analytics or crash reporting tools) may process limited technical data on our behalf.
+
+4.2 Legal Requirements
+
+We may disclose information if required to:
+
+comply with applicable law
+respond to lawful requests
+protect rights or safety
+
+4.3 Business Transfers
+
+If Audiobook Hub is involved in a merger, acquisition, or asset sale, information may be transferred as part of that transaction.
+
+5. Third-Party Services
+
+Audiobook Hub may interact with third-party platforms, including:
+
+Google Play (for billing and subscriptions)
+podcast and RSS providers
+torrent networks
+external websites
+
+These services are not controlled by us and have their own privacy policies.
+
+6. Cookies and Local Storage
+
+Audiobook Hub may use local storage or device-level storage to:
+
+save preferences
+maintain playback state
+improve user experience
+
+We do not use traditional web tracking cookies within the app.
+
+7. Data Retention
+
+We retain minimal information.
+
+Most data is stored locally on your device
+We do not maintain centralized user databases
+Any data retained is only for as long as necessary to operate the app or comply with legal obligations
+Users can remove locally stored data at any time by clearing app data or uninstalling the application.
+
+8. Your Privacy Rights
+
+Depending on your location, you may have rights such as:
+
+access to your data
+correction or deletion requests
+restriction of processing
+
+Because Audiobook Hub does not maintain user accounts or centralized personal data, many requests may require you to manage data directly on your device (e.g., uninstalling the app or clearing app data).
+
+For assistance, contact:
+
+llsdevsteam@gmail.com
+
+9. Children’s Privacy
+
+Audiobook Hub is not intended for children under 13 (or the applicable age in your region).
+
+We do not knowingly collect personal information from children.
+
+10. International Use
+
+The Services may be used globally.
+
+Any data processed may be handled according to the laws applicable in your region.
+
+11. Security
+
+We take reasonable steps to protect your information by:
+
+minimizing data collection
+avoiding centralized storage of personal data
+relying on secure platform-level systems (such as Google Play Billing)
+
+However, no system is completely secure.
+
+12. Changes to This Privacy Policy
+
+We may update this Privacy Policy from time to time.
+
+Updates will be reflected by a revised “Last Updated” date.
+
+Continued use of the Services means you accept the updated policy.
+
+13. Contact Us
+
+Audiobook Hub is responsible for this Privacy Policy.
+
+If you have questions or concerns, you may contact:
+
+Email: llsdevsteam@gmail.com

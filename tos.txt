@@ -1,0 +1,388 @@
+Audiobook Hub Terms of Use
+
+Last Updated: March 2026
+
+IMPORTANT NOTICE REGARDING DISPUTES: THESE TERMS CONTAIN PROVISIONS THAT LIMIT OUR LIABILITY, DISCLAIM WARRANTIES, AND GOVERN HOW DISPUTES BETWEEN YOU AND AUDIOBOOK HUB ARE RESOLVED. PLEASE READ THESE TERMS CAREFULLY BEFORE USING THE APP OR ANY RELATED SERVICES.
+
+1. Acceptance of These Terms
+
+By downloading, installing, accessing, browsing, or using Audiobook Hub, including any related mobile application, website, feature, integration, feed, or service that links to or references these Terms, you agree to be bound by these Terms of Use and our Privacy Policy.
+
+If you do not agree to these Terms, do not use Audiobook Hub.
+
+If you are using Audiobook Hub on behalf of a business, organization, or other legal entity, you represent and warrant that you have authority to bind that entity to these Terms. In that case, the words "you" and "your" refer to both you and that entity.
+
+These Terms apply to your use of Audiobook Hub as a whole, unless a particular feature, product, or paid offering is accompanied by separate additional terms. If additional terms apply to a specific feature and conflict with these Terms, the additional terms will control only for that specific feature.
+
+2. Definitions
+
+For purposes of these Terms:
+
+"Audiobook Hub", "we", "our", and "us" mean the Audiobook Hub application, its related services, and the developer or operator of those services.
+"Services" means the Audiobook Hub app, any related website, features, data connections, support tools, feeds, online functionality, or related offerings.
+"Materials" means content, software, text, designs, audio, visual elements, metadata, listings, feeds, documents, code, or other information made available through the Services.
+"User Content" means content, files, links, data, feed sources, imported metadata, playlists, settings, submissions, or other materials provided, added, imported, transmitted, or made available by you.
+"Third Party Services" means services, content providers, websites, podcast directories, RSS feeds, torrent or magnet sources, payment processors, analytics tools, app stores, or other external services not operated by Audiobook Hub.
+"Software" means the Audiobook Hub application and any related software, code, updates, patches, or associated components.
+3. Eligibility
+
+You may use Audiobook Hub only if you are legally permitted to do so under the laws that apply to you.
+
+You must be at least 16 years old to use Audiobook Hub unless the laws in your jurisdiction require a higher minimum age. If you are under the age of majority in your jurisdiction but old enough to lawfully use the Services, you may use Audiobook Hub only with the involvement and permission of a parent or legal guardian, who agrees to these Terms on your behalf.
+
+You may not use Audiobook Hub if:
+
+doing so would violate applicable law;
+you are prohibited from receiving or using the Services under applicable law;
+you have previously been suspended or terminated from using Audiobook Hub and we have not expressly restored your access.
+4. Changes to These Terms
+
+We may revise these Terms from time to time. If we make material changes, we may provide notice by updating the date above, posting a notice within the app or website, or using another reasonable method.
+
+Your continued use of Audiobook Hub after revised Terms become effective means you accept the updated Terms.
+
+If you do not agree to the updated Terms, you must stop using the Services.
+
+5. Changes to the Services
+
+Audiobook Hub is an evolving product. We may add, remove, suspend, limit, modify, or discontinue any part of the Services at any time, temporarily or permanently, with or without notice.
+
+This includes changes to:
+
+supported file formats;
+podcast or feed integrations;
+metadata sources;
+playback features;
+import or export features;
+torrent or external source handling;
+availability of online features;
+device compatibility.
+
+We are not liable for any loss, inconvenience, or damage resulting from any modification, suspension, or discontinuation of any part of the Services.
+
+6. Accounts and Access Credentials
+
+Some features of Audiobook Hub may be available without an account. Other features may require an account, subscription, access token, app store entitlement, or other credentials.
+
+If you create an account or are issued credentials, you agree to:
+
+provide accurate and current information;
+keep your login details and credentials secure;
+promptly update inaccurate or outdated information;
+notify us if you believe your account or credentials have been compromised.
+
+You are responsible for all activity that occurs through your account or credentials unless applicable law provides otherwise.
+
+You may not:
+
+create an account for another person without authorization;
+share access credentials in a way that violates these Terms;
+impersonate another user, company, or entity;
+sell, rent, transfer, or sublicense your account or credentials unless we expressly allow it in writing.
+
+We may require you to change your credentials, suspend access, or take other protective steps if we reasonably believe your account or credentials are insecure or being misused.
+
+7. License to Use Audiobook Hub
+
+Subject to your compliance with these Terms, we grant you a limited, revocable, non-exclusive, non-transferable, non-sublicensable license to install and use Audiobook Hub for your personal, lawful, non-commercial use on devices that you own or control.
+
+This license does not give you ownership of the Software or any intellectual property rights in the Services.
+
+Except as expressly permitted by law or by these Terms, you may not:
+
+copy, reproduce, redistribute, or publicly display the Software;
+modify, adapt, translate, or create derivative works from the Software;
+reverse engineer, decompile, disassemble, or attempt to extract source code;
+remove or alter copyright notices, trademarks, or proprietary markings;
+use the Software to build a competing service or product;
+make the app available to multiple users through a hosted or bureau style environment unless we expressly permit it;
+use the Services for benchmarking or competitive analysis for a competing product;
+circumvent technical restrictions or access controls.
+
+All rights not expressly granted are reserved.
+
+8. Software Updates
+
+Audiobook Hub may automatically or manually provide updates, patches, bug fixes, feature changes, security improvements, or new versions.
+
+You agree that:
+
+updates may be installed automatically where supported;
+updates may change or remove features;
+your continued use of updated Software remains subject to these Terms;
+some older versions may stop functioning properly after updates are released.
+
+We are not obligated to support every prior version of the Software indefinitely.
+
+9. Permitted Use of the Services
+
+You may use Audiobook Hub only for lawful purposes and only in accordance with these Terms.
+
+You agree to use the Services responsibly and in a manner that does not:
+
+violate applicable law;
+infringe the rights of others;
+interfere with the operation of the Services;
+damage our systems, infrastructure, or reputation;
+misuse third party content or services accessed through Audiobook Hub.
+
+10. User Content and Source Responsibility
+
+Audiobook Hub may allow you to import, add, connect, or access content from external sources, including but not limited to:
+
+RSS feeds
+Podcast directories
+Public domain libraries
+Torrent or magnet links
+Direct file URLs
+User-provided files or storage locations
+
+You are solely responsible for any content you access, import, download, stream, or store using Audiobook Hub.
+
+You represent and warrant that:
+
+you have the legal right to access and use the content you interact with through the app;
+your use of any content does not violate copyright, intellectual property rights, or applicable laws;
+any sources you add or connect are lawful and authorized for your use.
+
+Audiobook Hub does not monitor, control, host, or verify third party content accessed through the Services. The app functions as a tool that allows users to organize, access, and play content from sources they choose.
+
+We do not endorse, verify, or guarantee the legality, accuracy, or safety of any external content or sources.
+
+11. Third Party Services
+
+Audiobook Hub relies on and may integrate with Third Party Services.
+
+These may include:
+
+podcast directories and metadata providers
+RSS feed providers
+hosting services
+torrent indexing or magnet link providers
+app stores such as Google Play
+analytics, crash reporting, or performance tools (if implemented)
+
+Your use of Third Party Services is governed by the terms and policies of those third parties.
+
+Audiobook Hub is not responsible for:
+
+the availability or reliability of Third Party Services;
+the content provided by third parties;
+any changes, interruptions, or shutdowns of those services;
+any data collection or practices of third parties.
+
+If a Third Party Service becomes unavailable or changes its policies, certain features of Audiobook Hub may stop working or be removed.
+
+12. Copyright and Intellectual Property
+
+Audiobook Hub respects intellectual property rights.
+
+The Services, including the Software, design, layout, branding, and functionality, are owned by Audiobook Hub and are protected by applicable intellectual property laws.
+
+You may not use the Services in a way that infringes the rights of others.
+
+If you believe that content accessible through Audiobook Hub infringes your copyright, you may contact us at:
+
+llsdevsteam@gmail.com
+
+Include sufficient information for us to understand and evaluate your claim.
+
+Audiobook Hub does not host or distribute copyrighted content itself. Any content accessed through the app originates from external sources selected by the user.
+
+13. Investigations and Enforcement
+
+We reserve the right, but are not obligated, to investigate any use of the Services that we believe violates these Terms or applicable law.
+
+We may take any action we deem appropriate, including:
+
+removing or restricting access to features;
+suspending or terminating access to the Services;
+cooperating with law enforcement or regulatory authorities;
+preserving and disclosing information as required by law.
+
+You agree to cooperate with any reasonable investigation.
+
+14. Suspension and Termination
+
+We may suspend or terminate your access to Audiobook Hub, in whole or in part, at any time, with or without notice, if:
+
+you violate these Terms;
+your use creates legal risk or harm;
+required by law or regulation;
+continued operation of the Services is not feasible.
+
+You may stop using the Services at any time by discontinuing use and uninstalling the app.
+
+Upon termination:
+
+your license to use the Software ends immediately;
+access to certain features may be disabled;
+we are not responsible for retaining or restoring any data.
+
+15. Disclaimers of Warranties
+
+Audiobook Hub is provided on an "as is" and "as available" basis.
+
+To the maximum extent permitted by law, we disclaim all warranties of any kind, whether express, implied, or statutory, including but not limited to:
+
+merchantability;
+fitness for a particular purpose;
+non-infringement;
+accuracy, reliability, or completeness of content;
+uninterrupted or error-free operation.
+
+We do not guarantee that:
+
+the Services will always be available or function without interruption;
+content accessed through the app will be accurate or safe;
+defects will be corrected;
+the Services are free of viruses or harmful components.
+
+Your use of Audiobook Hub is at your own risk.
+
+16. Limitation of Liability
+
+To the maximum extent permitted by law, Audiobook Hub and its developer shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to:
+
+loss of data;
+loss of content;
+loss of profits or revenue;
+interruption of service;
+device damage or system failure.
+
+This applies regardless of the legal theory and even if we have been advised of the possibility of such damages.
+
+In no event shall our total liability exceed the amount you paid, if any, to use Audiobook Hub.
+
+17. Indemnification
+
+You agree to defend, indemnify, and hold harmless Audiobook Hub and its developer from and against any claims, liabilities, damages, losses, and expenses arising out of or related to:
+
+your use of the Services;
+your violation of these Terms;
+your violation of any law or third party rights;
+content you access or use through the app.
+18. Export and Legal Compliance
+
+You agree to comply with all applicable laws, including export control laws and regulations.
+
+You may not use or export Audiobook Hub in violation of applicable laws or regulations.
+
+19. Governing Law
+
+These Terms are governed by and construed in accordance with the laws applicable in your jurisdiction, without regard to conflict of law principles.
+
+20. Dispute Resolution
+
+Any disputes arising out of or relating to these Terms or the use of Audiobook Hub shall be resolved through good faith negotiations first.
+
+If a dispute cannot be resolved informally, it may be brought in a court of competent jurisdiction, unless otherwise required by applicable law.
+
+21. General Terms
+
+These Terms constitute the entire agreement between you and Audiobook Hub regarding the Services.
+
+If any provision is found to be invalid or unenforceable, the remaining provisions will remain in full force and effect.
+
+Our failure to enforce any provision does not constitute a waiver of that provision.
+
+You may not assign or transfer your rights under these Terms without our prior written consent.
+
+We may assign these Terms without restriction.
+
+22. Payments, Subscriptions, and Billing
+
+Certain features of Audiobook Hub may require payment, including one-time purchases or recurring subscriptions (“Paid Services”).
+
+22.1 Billing Platform
+
+All payments are processed through the applicable app store or platform (such as Google Play). Audiobook Hub does not directly process or store your payment information.
+
+Your purchases are subject to the terms, conditions, and policies of the platform you use, including Google Play’s payment and refund policies.
+
+Audiobook Hub does not receive or store personal payment details such as credit card numbers, billing addresses, or financial account information. Limited transaction data (such as purchase status or entitlement) may be provided by the platform solely to enable feature access within the app.
+
+22.2 Subscriptions and Auto-Renewal
+
+Subscriptions may be offered on a recurring basis (e.g., monthly or yearly).
+
+By purchasing a subscription, you agree that:
+
+your subscription will automatically renew at the end of each billing cycle unless canceled;
+you authorize the platform (e.g., Google Play) to charge your selected payment method;
+pricing, billing frequency, and included features will be clearly presented before purchase.
+
+22.3 Managing and Canceling Subscriptions
+
+You may manage or cancel your subscription at any time through your app store account settings.
+
+For Google Play users:
+
+Subscriptions must be canceled through your Google Play account
+Deleting the app does not cancel your subscription
+Cancellation will take effect at the end of the current billing period
+
+22.4 Refunds
+
+All purchases, including subscriptions, are handled by the platform provider.
+
+Audiobook Hub does not issue refunds directly.
+
+Refund requests must be submitted through the platform used for purchase (e.g., Google Play), and are subject to that platform’s refund policies.
+
+22.5 Changes to Pricing
+
+Audiobook Hub reserves the right to modify pricing for Paid Services at any time.
+
+If pricing changes:
+
+existing subscribers will be notified through the platform when required;
+changes will apply at the next billing cycle unless otherwise stated.
+
+22.6 Access to Paid Features
+
+Access to Paid Services is granted only while your subscription is active and in good standing.
+
+We reserve the right to:
+
+modify, replace, or discontinue features included in Paid Services;
+restrict access if payment is not received or is reversed.
+
+Purchases and subscriptions are tied to the user’s platform account and are non-transferable between accounts.
+
+22.7 Free Trials and Promotional Offers
+
+Audiobook Hub may offer free trials or promotional access.
+
+If a free trial is offered:
+
+it will automatically convert into a paid subscription unless canceled before the trial ends;
+you may be required to provide a valid payment method to start the trial.
+
+22.8 No Guarantee of Availability
+
+Paid features may change, be updated, or discontinued at any time.
+
+Audiobook Hub does not guarantee continued availability of any specific feature, even if previously paid for, unless required by applicable law.
+
+Where required by applicable law, users may be entitled to continued access to purchased features or equivalent replacements.
+
+22.9 Fraud and Abuse
+
+We reserve the right to suspend or terminate access to Paid Services if we detect:
+
+fraudulent payment activity
+abuse of subscription systems
+chargebacks or payment disputes
+
+22.10 Contact for Billing Questions
+
+If you have questions about billing or subscriptions, contact:
+
+llsdevsteam@gmail.com
+
+23. Contact Information
+
+If you have questions about these Terms, you may contact:
+
+llsdevsteam@gmail.com
