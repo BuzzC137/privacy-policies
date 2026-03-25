@@ -37,13 +37,13 @@ A live version of these policies may be available here:
 
 - Policies are actively maintained and updated as projects change
 - Content is intended for real-world use, not just examples
-- Always review and customize policies before using them in production environments
 
 ## Author
 
-Developed and maintained by BuzzC137  
+Developed and maintained by BuzzC137 (Lost Light Studios)
 Part of ongoing platform and application development work
 
 ---
 
 If you have questions or need clarification, feel free to reach out.
+llsdevsteam@gmail.com
