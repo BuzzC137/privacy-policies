@@ -264,6 +264,120 @@ body {
     box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
 }
 
+/* Document tabs for Audiobook Hub */
+.document-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+}
+
+.document-tab {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    color: #b0b0b0;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.document-tab::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.document-tab:hover {
+    background: #252525;
+    border-color: #444;
+    color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.1);
+}
+
+.document-tab.active {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    border-color: #2563eb;
+    color: #ffffff;
+    box-shadow: 0 2px 12px rgba(37, 99, 235, 0.25);
+}
+
+.document-tab.active::before {
+    opacity: 1;
+}
+
+/* Document content area */
+.document-content {
+    background: #0f0f0f;
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-top: 1rem;
+    min-height: 400px;
+    max-height: 600px;
+    overflow-y: auto;
+    transition: opacity 0.15s ease;
+}
+
+.document-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.document-content::-webkit-scrollbar-track {
+    background: #1a1a1a;
+    border-radius: 4px;
+}
+
+.document-content::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 4px;
+}
+
+.document-content::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.document-text {
+    color: #e0e0e0;
+    line-height: 1.7;
+}
+
+.document-heading {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 2rem 0 1rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #333;
+}
+
+.document-heading:first-child {
+    margin-top: 0;
+}
+
+.document-paragraph {
+    margin-bottom: 1rem;
+    color: #d0d0d0;
+    text-align: justify;
+}
+
+.document-paragraph:last-child {
+    margin-bottom: 0;
+}
+
 /* Footer */
 .footer {
     text-align: center;
@@ -381,6 +495,24 @@ body {
         padding: 0.6rem 1rem;
         font-size: 0.9rem;
     }
+    
+    .document-tabs {
+        gap: 0.4rem;
+    }
+    
+    .document-tab {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+    
+    .document-content {
+        padding: 1.5rem;
+        max-height: 500px;
+    }
+    
+    .document-heading {
+        font-size: 1.1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -412,6 +544,31 @@ body {
         width: 100%;
         max-width: 200px;
         justify-content: center;
+    }
+    
+    .document-tabs {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+    
+    .document-tab {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    
+    .document-content {
+        padding: 1rem;
+        max-height: 400px;
+        min-height: 300px;
+    }
+    
+    .document-heading {
+        font-size: 1rem;
+    }
+    
+    .document-paragraph {
+        font-size: 0.9rem;
     }
     
     .project-pill {
