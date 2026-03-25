@@ -31,7 +31,7 @@ The repository may include:
 
 A live version of these policies may be available here:
 
-👉 https://privacy-policies.vercel.app
+https://privacy-policies-red.vercel.app
 
 ## Notes
 
