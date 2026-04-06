@@ -266,12 +266,12 @@ const policyData = {
                 </div>
             </div>
         `,
-        // Documents are fetched at runtime from /public/legal/ — no inline content.
+        // Documents are fetched at runtime from /legal/ — no inline content.
         // File map: tos -> tos.txt, privacy -> privacypolicy.txt, eula -> eula.txt
         _documentFiles: {
-            tos: 'public/legal/tos.txt',
-            privacy: 'public/legal/privacypolicy.txt',
-            eula: 'public/legal/eula.txt'
+            tos: 'legal/tos.txt',
+            privacy: 'legal/privacypolicy.txt',
+            eula: 'legal/eula.txt'
         }
     },
     lostlight: {
