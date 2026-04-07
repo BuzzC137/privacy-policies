@@ -1,0 +1,78 @@
+EXONET NETWORK — PRIVACY POLICY
+Last Updated: April 2026
+
+This Privacy Policy explains how Exodus Network ("we", "us") collects and uses information.
+
+1. INFORMATION WE COLLECT
+
+We may collect:
+
+* Account data (email, username)
+* Usage data (game activity, interactions)
+* Device/browser data
+* IP address
+* Analytics data
+
+2. ANALYTICS
+We use analytics tools to:
+
+* Understand usage patterns
+* Improve performance
+* Monitor system health
+
+3. ADVERTISING
+We may display advertisements using third-party providers (such as Google AdSense).
+
+These providers may:
+
+* Use cookies
+* Collect usage data
+* Serve personalized ads
+
+4. COOKIES
+We use cookies to:
+
+* Maintain sessions
+* Improve user experience
+* Support analytics and ads
+
+You can disable cookies via your browser.
+
+5. DATA USE
+We use data to:
+
+* Operate the platform
+* Improve features
+* Detect abuse
+* Serve ads
+
+6. DATA RETENTION
+We retain data as long as necessary for operation and legal compliance.
+
+7. USER CONTROL / DATA DELETION
+Users may delete their account and associated data through the Settings page.
+
+Upon deletion:
+
+* Personal data will be removed or anonymized
+* Some data may be retained for legal or security purposes
+
+8. DATA SHARING
+We do not sell personal data.
+
+We may share data with:
+
+* Service providers (analytics, hosting)
+* Legal authorities if required
+
+9. SECURITY
+We implement reasonable safeguards but cannot guarantee absolute security.
+
+10. CHILDREN
+The Service is not intended for children under 13.
+
+11. CHANGES
+We may update this policy. Continued use means acceptance.
+
+12. CONTACT
+See the official contact page on the website.

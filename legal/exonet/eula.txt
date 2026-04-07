@@ -1,0 +1,30 @@
+EXONET NETWORK — END USER LICENSE AGREEMENT (EULA)
+Last Updated: April 2026
+
+1. LICENSE
+We grant you a limited, non-exclusive, non-transferable license to use Exodus Network.
+
+2. RESTRICTIONS
+You may not:
+
+* Modify or reverse engineer the platform
+* Use automation or bots
+* Exploit vulnerabilities
+
+3. OWNERSHIP
+All content, systems, and assets belong to Exodus Network.
+
+4. TERMINATION
+We may revoke access at any time for violations.
+
+5. NO WARRANTY
+The software is provided "as is" without warranties.
+
+6. LIMITATION OF LIABILITY
+We are not liable for damages resulting from use of the Service.
+
+7. UPDATES
+We may update the platform without notice.
+
+8. ACCEPTANCE
+Using the Service means you accept this agreement.

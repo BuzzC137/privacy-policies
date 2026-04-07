@@ -1,5 +1,41 @@
-// Privacy policy content data
-const policyData = {
+// =============================================================================
+// PRODUCT CONFIGURATION
+// To add a new product:
+//   1. Add an entry to PRODUCTS below (key = data-project value in HTML)
+//   2. Choose one of two content modes:
+//      a) File-based: set _documentFiles with paths to .txt files in legal/<product>/
+//      b) Inline: set content directly as an HTML string
+//   3. Add a <button class="project-pill" data-project="<key>"> in index.html
+// =============================================================================
+
+const PRODUCTS = {
+
+    // -------------------------------------------------------------------------
+    // FILE-BASED PRODUCTS  (loads legal docs from /legal/<folder>/*.txt)
+    // -------------------------------------------------------------------------
+
+    'audiobook-hub': {
+        title: "Audiobook Hub Legal Documents",
+        _documentFiles: {
+            tos:     'legal/audiobookhub/tos.txt',
+            privacy: 'legal/audiobookhub/privacypolicy.txt',
+            eula:    'legal/audiobookhub/eula.txt'
+        }
+    },
+
+    exonet: {
+        title: "Exonet.site Legal Documents",
+        _documentFiles: {
+            tos:     'legal/exonet/tos.txt',
+            privacy: 'legal/exonet/privacypolicy.txt',
+            eula:    'legal/exonet/eula.txt'
+        }
+    },
+
+    // -------------------------------------------------------------------------
+    // INLINE PRODUCTS  (content defined directly as HTML strings below)
+    // -------------------------------------------------------------------------
+
     tornpanel: {
         title: "TornPanel Privacy Policy",
         content: `
@@ -194,86 +230,7 @@ const policyData = {
             </div>
         `
     },
-    exonet: {
-        title: "Exonet Privacy Policy",
-        content: `
-            <div class="policy-section">
-                <h2 class="section-title">Overview</h2>
-                <p>Exodus Network is an online game platform and interactive world experience. This section explains how data is handled within the game and related services.</p>
-            </div>
 
-            <div class="policy-section">
-                <h2 class="section-title">Data We Collect</h2>
-                <ul>
-                    <li>Basic account or session identifiers if applicable</li>
-                    <li>Gameplay data such as location, actions, inventory, progression, and world interactions</li>
-                    <li>Real-time interaction data needed for multiplayer systems and live services</li>
-                </ul>
-            </div>
-
-            <div class="policy-section">
-                <h2 class="section-title">Data Storage</h2>
-                <p>Game and session data may be stored on our servers to support persistent gameplay and platform functionality.</p>
-            </div>
-
-            <div class="policy-section">
-                <h2 class="section-title">Data Sharing</h2>
-                <p>We do not sell personal data to third parties.</p>
-            </div>
-
-            <div class="policy-section">
-                <h2 class="section-title">Real-Time Systems</h2>
-                <p>Game events may be transmitted between services such as the game server, API, and supporting web systems to power live features.</p>
-            </div>
-
-            <div class="policy-section">
-                <h2 class="section-title">Purpose of Use</h2>
-                <p>Data is used strictly to:</p>
-                <ul>
-                    <li>Run the game world</li>
-                    <li>Maintain player state</li>
-                    <li>Support progression and world interaction</li>
-                    <li>Enable multiplayer and live systems</li>
-                </ul>
-            </div>
-
-            <div class="policy-section">
-                <h2 class="section-title">Security</h2>
-                <p>We take reasonable measures to protect game and session data.</p>
-            </div>
-
-            <div class="policy-section">
-                <h2 class="section-title">User Control</h2>
-                <p>Users may delete all data in settings dashboard in game or contact us regarding data removal requests where applicable.</p>
-            </div>
-        `
-    },
-    'audiobook-hub': {
-        title: "Audiobook Hub Legal Documents",
-        content: `
-            <div class="policy-section">
-                <h2 class="section-title">Legal Documents</h2>
-                <p>Audiobook Hub is governed by the following legal documents. Please select a document to view the full text.</p>
-                
-                <div class="document-tabs">
-                    <button class="document-tab active" data-document="tos">Terms of Use</button>
-                    <button class="document-tab" data-document="privacy">Privacy Policy</button>
-                    <button class="document-tab" data-document="eula">EULA</button>
-                </div>
-                
-                <div class="document-content" id="document-display">
-                    <!-- Document content will be loaded here -->
-                </div>
-            </div>
-        `,
-        // Documents are fetched at runtime from /legal/ — no inline content.
-        // File map: tos -> tos.txt, privacy -> privacypolicy.txt, eula -> eula.txt
-        _documentFiles: {
-            tos: 'legal/tos.txt',
-            privacy: 'legal/privacypolicy.txt',
-            eula: 'legal/eula.txt'
-        }
-    },
     lostlight: {
         title: "Lost Light Privacy Policy",
         content: `
@@ -323,172 +280,186 @@ const policyData = {
             </div>
         `
     }
+
 };
 
-// DOM elements
-const policyContent = document.getElementById('policy-content');
-const projectPills = document.querySelectorAll('.project-pill');
+// =============================================================================
+// Shared document-tab shell used by all file-based products.
+// Produces the same tab chrome as Audiobook Hub — consistent across all
+// products that load their docs from .txt files.
+// =============================================================================
+function buildDocumentShell() {
+    return `
+        <div class="policy-section">
+            <h2 class="section-title">Legal Documents</h2>
+            <p>Please select a document below to read the full text.</p>
 
-// Current project tracking
+            <div class="document-tabs">
+                <button class="document-tab active" data-document="tos">Terms of Use</button>
+                <button class="document-tab" data-document="privacy">Privacy Policy</button>
+                <button class="document-tab" data-document="eula">EULA</button>
+            </div>
+
+            <div class="document-content" id="document-display">
+                <!-- Document content loaded dynamically -->
+            </div>
+        </div>
+    `;
+}
+
+// =============================================================================
+// DOM REFERENCES
+// =============================================================================
+const policyContent = document.getElementById('policy-content');
+const projectPills  = document.querySelectorAll('.project-pill');
+
 let currentProject = 'tornpanel';
 
-// Initialize the application
+// =============================================================================
+// INIT
+// =============================================================================
 function init() {
     const hashProject = getProjectFromHash();
     loadPolicy(hashProject || 'tornpanel');
     setupEventListeners();
 }
 
-// Get project from URL hash
+// =============================================================================
+// HASH HELPERS
+// =============================================================================
 function getProjectFromHash() {
     const hash = window.location.hash.slice(1);
-    return policyData[hash] ? hash : null;
+    return PRODUCTS[hash] ? hash : null;
 }
 
-// Load policy content for a specific project
+// =============================================================================
+// POLICY LOADING
+// =============================================================================
 function loadPolicy(projectId) {
-    const policy = policyData[projectId];
-    if (!policy) return;
+    const product = PRODUCTS[projectId];
+    if (!product) return;
 
     currentProject = projectId;
     updateActivePill(projectId);
     updateHash(projectId);
-    updatePageTitle(policy.title);
-    loadContentWithTransition(policy.content);
+    updatePageTitle(product.title);
+
+    // File-based products get the shared document-tab shell.
+    // Inline products use their own HTML content directly.
+    const contentHTML = product._documentFiles
+        ? buildDocumentShell()
+        : product.content;
+
+    loadContentWithTransition(contentHTML, product._documentFiles ? 'tos' : null);
 }
 
-// Update active pill styling
 function updateActivePill(projectId) {
     projectPills.forEach(pill => {
-        if (pill.dataset.project === projectId) {
-            pill.classList.add('active');
-        } else {
-            pill.classList.remove('active');
-        }
+        pill.classList.toggle('active', pill.dataset.project === projectId);
     });
 }
 
-// Update URL hash
 function updateHash(projectId) {
     if (window.history.pushState) {
-        const newURL = window.location.pathname + '#' + projectId;
-        window.history.pushState({ projectId }, '', newURL);
+        window.history.pushState({ projectId }, '', window.location.pathname + '#' + projectId);
     }
 }
 
-// Update page title
 function updatePageTitle(title) {
     document.title = `${title} - Lost Light Studios`;
 }
 
-// Load content with transition effect
-function loadContentWithTransition(content) {
+// =============================================================================
+// CONTENT TRANSITION
+// =============================================================================
+function loadContentWithTransition(html, defaultDocument) {
     policyContent.style.opacity = '0';
 
     setTimeout(() => {
-        policyContent.innerHTML = content;
+        policyContent.innerHTML = html;
         policyContent.style.opacity = '1';
         setupDocumentTabs();
 
-        // Load default document tab for Audiobook Hub
-        if (currentProject === 'audiobook-hub') {
-            loadDocument('tos');
+        // Auto-load the default tab for file-based products
+        if (defaultDocument) {
+            loadDocument(defaultDocument);
         }
     }, 200);
 }
 
-// Set up document tab listeners for Audiobook Hub
+// =============================================================================
+// DOCUMENT TABS
+// =============================================================================
 function setupDocumentTabs() {
-    const documentTabs = document.querySelectorAll('.document-tab');
-    const documentDisplay = document.getElementById('document-display');
+    const tabs = document.querySelectorAll('.document-tab');
+    if (!tabs.length) return;
 
-    if (!documentTabs.length || !documentDisplay) return;
-
-    documentTabs.forEach(tab => {
+    tabs.forEach(tab => {
         tab.addEventListener('click', () => {
-            const documentType = tab.dataset.document;
-            loadDocument(documentType);
-            documentTabs.forEach(t => t.classList.remove('active'));
+            tabs.forEach(t => t.classList.remove('active'));
             tab.classList.add('active');
+            loadDocument(tab.dataset.document);
         });
     });
 }
 
-// Load and display a legal document.
-// Fetches from /public/legal/ if _documentFiles map exists; falls back gracefully.
+// Fetches a legal document from its .txt file and renders it.
 function loadDocument(documentType) {
-    const documentDisplay = document.getElementById('document-display');
-    if (!documentDisplay) return;
+    const display = document.getElementById('document-display');
+    if (!display) return;
 
-    const policy = policyData[currentProject];
-    if (!policy) return;
+    const product = PRODUCTS[currentProject];
+    if (!product || !product._documentFiles) return;
+
+    const filePath = product._documentFiles[documentType];
+    if (!filePath) return;
 
     // Show loading state
-    documentDisplay.style.opacity = '0';
+    display.style.opacity = '0';
     setTimeout(() => {
-        documentDisplay.innerHTML = '<p class="document-paragraph" style="color:#a1a1aa;">Loading document...</p>';
-        documentDisplay.style.opacity = '1';
+        display.innerHTML = '<p class="document-paragraph" style="color:#a1a1aa;">Loading document...</p>';
+        display.style.opacity = '1';
     }, 150);
 
-    // Fetch from file if _documentFiles map is present
-    if (policy._documentFiles && policy._documentFiles[documentType]) {
-        const filePath = policy._documentFiles[documentType];
-        fetch(filePath)
-            .then(response => {
-                if (!response.ok) throw new Error('File not found: ' + filePath);
-                return response.text();
-            })
-            .then(text => {
-                const formattedContent = formatDocumentText(text);
-                documentDisplay.style.opacity = '0';
-                setTimeout(() => {
-                    documentDisplay.innerHTML = formattedContent;
-                    documentDisplay.style.opacity = '1';
-                }, 150);
-            })
-            .catch(() => {
-                documentDisplay.style.opacity = '0';
-                setTimeout(() => {
-                    documentDisplay.innerHTML = '<p class="document-paragraph" style="color:#f87171;">Unable to load document. Please try again later.</p>';
-                    documentDisplay.style.opacity = '1';
-                }, 150);
-            });
-        return;
-    }
-
-    // Legacy fallback: inline documents object (not used for audiobook-hub anymore)
-    if (policy.documents && policy.documents[documentType]) {
-        const formattedContent = formatDocumentText(policy.documents[documentType]);
-        documentDisplay.style.opacity = '0';
-        setTimeout(() => {
-            documentDisplay.innerHTML = formattedContent;
-            documentDisplay.style.opacity = '1';
-        }, 150);
-        return;
-    }
-
-    // Nothing found
-    documentDisplay.style.opacity = '0';
-    setTimeout(() => {
-        documentDisplay.innerHTML = '<p class="document-paragraph" style="color:#f87171;">Unable to load document. Please try again later.</p>';
-        documentDisplay.style.opacity = '1';
-    }, 150);
+    fetch(filePath)
+        .then(response => {
+            if (!response.ok) throw new Error('Not found: ' + filePath);
+            return response.text();
+        })
+        .then(text => {
+            const html = formatDocumentText(text);
+            display.style.opacity = '0';
+            setTimeout(() => {
+                display.innerHTML = html;
+                display.style.opacity = '1';
+            }, 150);
+        })
+        .catch(() => {
+            display.style.opacity = '0';
+            setTimeout(() => {
+                display.innerHTML = '<p class="document-paragraph" style="color:#f87171;">Unable to load document. Please try again later.</p>';
+                display.style.opacity = '1';
+            }, 150);
+        });
 }
 
-// Format document text for display
+// =============================================================================
+// TEXT FORMATTER
+// Turns a plain-text legal document into styled HTML.
+// =============================================================================
 function formatDocumentText(text) {
     const sections = text.split(/\n\s*\n/);
     let html = '<div class="document-text">';
 
     sections.forEach(section => {
-        const trimmedSection = section.trim();
-        if (trimmedSection) {
-            if (/^\d+\./.test(trimmedSection)) {
-                html += `<h3 class="document-heading">${trimmedSection}</h3>`;
-            } else {
-                const paragraph = trimmedSection.replace(/\n/g, '<br>');
-                html += `<p class="document-paragraph">${paragraph}</p>`;
-            }
+        const trimmed = section.trim();
+        if (!trimmed) return;
+
+        // Lines that start with a number+dot are treated as headings
+        if (/^\d+\./.test(trimmed)) {
+            html += `<h3 class="document-heading">${trimmed.replace(/\n/g, '<br>')}</h3>`;
+        } else {
+            html += `<p class="document-paragraph">${trimmed.replace(/\n/g, '<br>')}</p>`;
         }
     });
 
@@ -496,13 +467,12 @@ function formatDocumentText(text) {
     return html;
 }
 
-// Set up event listeners
+// =============================================================================
+// EVENT LISTENERS
+// =============================================================================
 function setupEventListeners() {
     projectPills.forEach(pill => {
-        pill.addEventListener('click', () => {
-            const projectId = pill.dataset.project;
-            loadPolicy(projectId);
-        });
+        pill.addEventListener('click', () => loadPolicy(pill.dataset.project));
     });
 
     window.addEventListener('popstate', (event) => {
@@ -516,5 +486,7 @@ function setupEventListeners() {
     });
 }
 
-// Initialize when DOM is ready
+// =============================================================================
+// BOOTSTRAP
+// =============================================================================
 document.addEventListener('DOMContentLoaded', init);

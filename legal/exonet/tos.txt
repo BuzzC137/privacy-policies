@@ -1,0 +1,86 @@
+EXONET NETWORK — TERMS OF USE
+Last Updated: April 2026
+
+IMPORTANT: These Terms govern your use of the Exodus Network platform ("Service"). By accessing or using the Service, you agree to these Terms.
+
+1. ACCEPTANCE OF TERMS
+By creating an account or using Exodus Network, you agree to be bound by these Terms, our Privacy Policy, and any applicable rules.
+
+If you do not agree, do not use the Service.
+
+2. DESCRIPTION OF SERVICE
+Exodus Network is an online persistent-world strategy and simulation platform where users interact with a dynamic economy, systems, and other players.
+
+Features may include:
+
+* Virtual economy and trading systems
+* Player progression and assets
+* AI-controlled entities
+* Real-time interactions
+
+3. USER ACCOUNTS
+You are responsible for:
+
+* Maintaining account security
+* All activity under your account
+
+You agree not to:
+
+* Share accounts
+* Create multiple accounts to exploit systems
+* Use automation, bots, or exploits
+
+4. VIRTUAL ITEMS AND CURRENCY
+All in-game items, currency, and assets:
+
+* Have no real-world monetary value
+* Are owned by Exodus Network
+* May be modified, removed, or reset at any time
+
+We are not liable for loss of virtual items.
+
+5. PROHIBITED BEHAVIOR
+You agree not to:
+
+* Exploit bugs or unintended mechanics
+* Harass or abuse other users
+* Attempt to manipulate systems unfairly
+* Reverse engineer or attack the platform
+
+6. ACCOUNT TERMINATION
+We may suspend or terminate accounts for:
+
+* Violations of these Terms
+* Suspected abuse or fraud
+
+Termination may result in loss of all in-game progress.
+
+7. SERVICE AVAILABILITY
+The Service is provided "as is":
+
+* No guarantee of uptime
+* Features may change or be removed
+
+8. DISCLAIMERS
+We provide no warranties regarding:
+
+* Accuracy
+* Reliability
+* Availability
+
+Use at your own risk.
+
+9. LIMITATION OF LIABILITY
+We are not liable for:
+
+* Data loss
+* Account loss
+* Gameplay interruptions
+* Indirect or consequential damages
+
+10. CHANGES TO TERMS
+We may update these Terms at any time. Continued use constitutes acceptance.
+
+11. CONTACT
+For questions:
+Contact via the official site contact page.
