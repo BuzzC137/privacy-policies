@@ -41,192 +41,390 @@ const PRODUCTS = {
         content: `
             <div class="policy-section">
                 <h2 class="section-title">1. Overview</h2>
-                <p>TornPanel (tornpanel.online) is a browser-based toolkit for Torn players and faction officers. It provides faction dashboards, chain management, war tools, member tracking, organized crime coordination, and related utilities.</p>
-                <p>This policy explains what data TornPanel collects, how it is used, and what rights you have. TornPanel is operated by Lost Light Studios.</p>
+                <p>TornPanel (tornpanel.online) is a browser-based toolkit for Torn players and faction officers. It provides personal dashboards, faction member management, war payouts, chain tools, organized crime coordination, market intelligence, and related utilities. TornPanel is operated by Lost Light Studios.</p>
+                <p>This policy explains what data TornPanel collects, where it is stored, who can access it, and what rights you have. It is updated whenever the app's data practices change.</p>
                 <p>Last updated: April 2026</p>
             </div>
 
             <div class="policy-section">
                 <h2 class="section-title">2. Torn API Usage</h2>
-                <p>TornPanel uses the Torn API to fetch game data on your behalf. How this works:</p>
+                <p>TornPanel uses the Torn API to fetch game data on your behalf. Key points:</p>
                 <ul>
-                    <li>You provide your Torn API key. TornPanel uses it to make requests to Torn's official API endpoints.</li>
-                    <li>TornPanel never requests your Torn account password. Only API keys should be provided.</li>
-                    <li>If you are asked for a password anywhere in TornPanel, do not enter it. That is not intended behavior.</li>
-                    <li>API usage follows Torn's API Terms of Service and rate limiting requirements.</li>
-                    <li>You control which API key you provide and at what access level.</li>
+                    <li>You provide your Torn API key at login. TornPanel uses it to make read-only requests to Torn's official API.</li>
+                    <li>TornPanel never requests your Torn password and performs no actions on your account.</li>
+                    <li>Your key is stored only in your browser's localStorage and is never written to TornPanel servers.</li>
+                    <li>API usage complies with Torn's API Terms of Service and rate limiting rules.</li>
                 </ul>
             </div>
 
             <div class="policy-section">
-                <h2 class="section-title">3. Torn API Compliance</h2>
-                <p>The following table reflects how TornPanel handles Torn API data in accordance with Torn's API requirements.</p>
-                <table style="width:100%;border-collapse:collapse;margin-top:10px;font-size:0.9em;">
+                <h2 class="section-title">3. Torn API Compliance Disclosure Tables</h2>
+                <p>Torn's API Terms of Service require any service using the Torn API to clearly disclose how keys and data are handled. TornPanel operates under three distinct data-handling contexts. Each has its own disclosure table below.</p>
+
+                <h3 style="margin-top:16px;margin-bottom:8px;font-size:1em;color:#d4d4d8;">3a — Base Application (all users)</h3>
+                <p style="font-size:0.85em;color:#71717a;margin-bottom:8px;">Applies the moment you log in, before enabling any optional features.</p>
+                <div style="overflow-x:auto;">
+                <table style="width:100%;border-collapse:collapse;font-size:0.85em;min-width:600px;">
                     <thead>
-                        <tr style="border-bottom:1px solid #444;">
-                            <th style="text-align:left;padding:8px 12px;color:#a1a1aa;">Category</th>
-                            <th style="text-align:left;padding:8px 12px;color:#a1a1aa;">TornPanel Behavior</th>
+                        <tr style="border-bottom:1px solid #3f3f46;background:#18181b;">
+                            <th style="text-align:left;padding:8px 10px;color:#a1a1aa;font-weight:600;">Data Storage</th>
+                            <th style="text-align:left;padding:8px 10px;color:#a1a1aa;font-weight:600;">Data Sharing</th>
+                            <th style="text-align:left;padding:8px 10px;color:#a1a1aa;font-weight:600;">Purpose of Use</th>
+                            <th style="text-align:left;padding:8px 10px;color:#a1a1aa;font-weight:600;">Key Storage &amp; Sharing</th>
+                            <th style="text-align:left;padding:8px 10px;color:#a1a1aa;font-weight:600;">Key Access Level</th>
+                        </tr>
+                        <tr style="border-bottom:1px solid #3f3f46;background:#18181b;">
+                            <td style="padding:4px 10px 8px;color:#71717a;font-size:0.9em;font-style:italic;">Will the data be stored for any purpose?</td>
+                            <td style="padding:4px 10px 8px;color:#71717a;font-size:0.9em;font-style:italic;">Who can access the data besides the end user?</td>
+                            <td style="padding:4px 10px 8px;color:#71717a;font-size:0.9em;font-style:italic;">What is the stored data being used for?</td>
+                            <td style="padding:4px 10px 8px;color:#71717a;font-size:0.9em;font-style:italic;">Will the API key be stored securely and who can access it?</td>
+                            <td style="padding:4px 10px 8px;color:#71717a;font-size:0.9em;font-style:italic;">What key access level or specific selections are required?</td>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr style="border-bottom:1px solid #333;">
-                            <td style="padding:8px 12px;font-weight:500;">Data Storage</td>
-                            <td style="padding:8px 12px;">API keys and fetched game data are stored only locally in your browser unless a specific shared-faction feature explicitly requires temporary remote processing. No personal Torn data is centrally stored beyond what operational features require.</td>
-                        </tr>
-                        <tr style="border-bottom:1px solid #333;">
-                            <td style="padding:8px 12px;font-weight:500;">Data Sharing</td>
-                            <td style="padding:8px 12px;">Your data is not shared with third parties for profit. Shared faction features (such as chain queues or coordinated alerts) may transmit limited operational data such as your Torn username and action metadata to TornPanel services so that faction members can coordinate. This is disclosed in this policy and within those features.</td>
-                        </tr>
-                        <tr style="border-bottom:1px solid #333;">
-                            <td style="padding:8px 12px;font-weight:500;">Purpose of Use</td>
-                            <td style="padding:8px 12px;">Faction tools, dashboards, war analytics, chain management, member tracking, organized crime coordination, alerts, and app analytics tied to functionality. No advertising use.</td>
-                        </tr>
-                        <tr style="border-bottom:1px solid #333;">
-                            <td style="padding:8px 12px;font-weight:500;">Key Storage and Sharing</td>
-                            <td style="padding:8px 12px;">Your API key is stored locally in your browser. It is not shared with third parties. It is not stored on TornPanel servers. In features that involve automation or shared-faction queue actions, the key may be used locally to authorize requests but is never transmitted to TornPanel servers.</td>
-                        </tr>
                         <tr>
-                            <td style="padding:8px 12px;font-weight:500;">Key Access Level</td>
-                            <td style="padding:8px 12px;">Different features require different access levels. Minimal or Limited access keys are sufficient for read-only dashboards. Full access keys may be needed for features that perform actions on your behalf. Grant only the minimum access level required for the features you use. You can review and revoke keys in Torn at any time.</td>
+                            <td style="padding:10px;vertical-align:top;color:#d4d4d8;border-right:1px solid #27272a;">Only locally — your browser's localStorage. Nothing is written to any server.</td>
+                            <td style="padding:10px;vertical-align:top;color:#d4d4d8;border-right:1px solid #27272a;">Nobody. No Torn data or API responses are shared with third parties.</td>
+                            <td style="padding:10px;vertical-align:top;color:#d4d4d8;border-right:1px solid #27272a;">Public community tools — personal dashboards, faction member views, war payouts, market intel, and analytics.</td>
+                            <td style="padding:10px;vertical-align:top;color:#d4d4d8;border-right:1px solid #27272a;">Stored locally / Not shared. The key is only transmitted to Torn's API and this app's read-only Supabase proxy. It is never logged or persisted on any server.</td>
+                            <td style="padding:10px;vertical-align:top;color:#d4d4d8;">Full Access — required to read battle stats, attacks, faction data, and financial summaries. The app is strictly read-only.</td>
                         </tr>
                     </tbody>
                 </table>
+                </div>
+
+                <h3 style="margin-top:20px;margin-bottom:8px;font-size:1em;color:#d4d4d8;">3b — Opt-In Storage Features (leave requests, officer tools)</h3>
+                <p style="font-size:0.85em;color:#71717a;margin-bottom:8px;">Applies only if you explicitly enable storage from the Settings page or when prompted.</p>
+                <div style="overflow-x:auto;">
+                <table style="width:100%;border-collapse:collapse;font-size:0.85em;min-width:600px;">
+                    <thead>
+                        <tr style="border-bottom:1px solid #3f3f46;background:#18181b;">
+                            <th style="text-align:left;padding:8px 10px;color:#a1a1aa;font-weight:600;">Data Storage</th>
+                            <th style="text-align:left;padding:8px 10px;color:#a1a1aa;font-weight:600;">Data Sharing</th>
+                            <th style="text-align:left;padding:8px 10px;color:#a1a1aa;font-weight:600;">Purpose of Use</th>
+                            <th style="text-align:left;padding:8px 10px;color:#a1a1aa;font-weight:600;">Key Storage &amp; Sharing</th>
+                            <th style="text-align:left;padding:8px 10px;color:#a1a1aa;font-weight:600;">Key Access Level</th>
+                        </tr>
+                        <tr style="border-bottom:1px solid #3f3f46;background:#18181b;">
+                            <td style="padding:4px 10px 8px;color:#71717a;font-size:0.9em;font-style:italic;">Will the data be stored for any purpose?</td>
+                            <td style="padding:4px 10px 8px;color:#71717a;font-size:0.9em;font-style:italic;">Who can access the data besides the end user?</td>
+                            <td style="padding:4px 10px 8px;color:#71717a;font-size:0.9em;font-style:italic;">What is the stored data being used for?</td>
+                            <td style="padding:4px 10px 8px;color:#71717a;font-size:0.9em;font-style:italic;">Will the API key be stored securely and who can access it?</td>
+                            <td style="padding:4px 10px 8px;color:#71717a;font-size:0.9em;font-style:italic;">What key access level or specific selections are required?</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding:10px;vertical-align:top;color:#d4d4d8;border-right:1px solid #27272a;">Persistent — until account deletion or opt-out. Stored in Supabase (a third-party cloud database) on your explicit opt-in: your Torn user ID, display name, faction ID, leave requests, and activity log events.</td>
+                            <td style="padding:10px;vertical-align:top;color:#d4d4d8;border-right:1px solid #27272a;">Faction officers and co-leaders — leave requests and member status are visible to faction officers within the same faction. Service owners have read-only access for support and maintenance only.</td>
+                            <td style="padding:10px;vertical-align:top;color:#d4d4d8;border-right:1px solid #27272a;">Public community tools — coordinated faction leave management, officer visibility, and activity logging for faction management workflows.</td>
+                            <td style="padding:10px;vertical-align:top;color:#d4d4d8;border-right:1px solid #27272a;">Not stored. Your API key remains in your browser only. A short-lived session JWT (12-hour expiry) is issued server-side and stored in localStorage; it contains only identity claims, not the raw key.</td>
+                            <td style="padding:10px;vertical-align:top;color:#d4d4d8;">Limited Access — faction member data and basic profile are required. Full Access is used for additional dashboard features.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+
+                <h3 style="margin-top:20px;margin-bottom:8px;font-size:1em;color:#d4d4d8;">3c — Discord Notifications — Faction Alerts <span style="display:inline-block;border:1px solid #92400e;background:#1c0d00;color:#f59e0b;font-size:0.8em;padding:1px 8px;border-radius:999px;vertical-align:middle;margin-left:6px;">Backend not yet deployed</span></h3>
+                <p style="font-size:0.85em;color:#71717a;margin-bottom:8px;">Applies when you configure a Discord webhook in the Notifications panel. The backend delivery infrastructure is not yet live — no alerts are currently sent.</p>
+                <div style="overflow-x:auto;">
+                <table style="width:100%;border-collapse:collapse;font-size:0.85em;min-width:600px;">
+                    <thead>
+                        <tr style="border-bottom:1px solid #3f3f46;background:#18181b;">
+                            <th style="text-align:left;padding:8px 10px;color:#a1a1aa;font-weight:600;">Data Storage</th>
+                            <th style="text-align:left;padding:8px 10px;color:#a1a1aa;font-weight:600;">Data Sharing</th>
+                            <th style="text-align:left;padding:8px 10px;color:#a1a1aa;font-weight:600;">Purpose of Use</th>
+                            <th style="text-align:left;padding:8px 10px;color:#a1a1aa;font-weight:600;">Key Storage &amp; Sharing</th>
+                            <th style="text-align:left;padding:8px 10px;color:#a1a1aa;font-weight:600;">Key Access Level</th>
+                        </tr>
+                        <tr style="border-bottom:1px solid #3f3f46;background:#18181b;">
+                            <td style="padding:4px 10px 8px;color:#71717a;font-size:0.9em;font-style:italic;">Will the data be stored for any purpose?</td>
+                            <td style="padding:4px 10px 8px;color:#71717a;font-size:0.9em;font-style:italic;">Who can access the data besides the end user?</td>
+                            <td style="padding:4px 10px 8px;color:#71717a;font-size:0.9em;font-style:italic;">What is the stored data being used for?</td>
+                            <td style="padding:4px 10px 8px;color:#71717a;font-size:0.9em;font-style:italic;">Will the API key be stored securely and who can access it?</td>
+                            <td style="padding:4px 10px 8px;color:#71717a;font-size:0.9em;font-style:italic;">What key access level or specific selections are required?</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding:10px;vertical-align:top;color:#d4d4d8;border-right:1px solid #27272a;">Persistent — until you remove the webhook or delete your account. The Discord webhook URL is stored encrypted on the server. Alert preferences are stored locally in your browser. Torn-derived event data used to trigger alerts is not persisted beyond the delivery attempt.</td>
+                            <td style="padding:10px;vertical-align:top;color:#d4d4d8;border-right:1px solid #27272a;">Nobody directly. Faction alert messages are sent to the Discord channel you configure; visibility is governed by that channel's own permissions, which you control.</td>
+                            <td style="padding:10px;vertical-align:top;color:#d4d4d8;border-right:1px solid #27272a;">Public community tools / competitive advantage — automated alerts about faction chain status, OC activity, ranked war starts, and similar time-sensitive faction events.</td>
+                            <td style="padding:10px;vertical-align:top;color:#d4d4d8;border-right:1px solid #27272a;">Stored remotely / Used only for automation. Your Torn API key is transmitted to a server-side edge function to query live event data for notification delivery. It is not persisted. The Discord webhook URL is stored server-side only and is never returned to or visible in the frontend.</td>
+                            <td style="padding:10px;vertical-align:top;color:#d4d4d8;">Full Access — required to read chain timers, member status, and faction organized crime data used by active alerts.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
             </div>
 
             <div class="policy-section">
-                <h2 class="section-title">4. Data Storage</h2>
-                <p>The following data is stored locally in your browser only:</p>
+                <h2 class="section-title">4. What We Collect and Why</h2>
+                <p>Most data fetched from the Torn API is used to render your dashboard in-session and is discarded when you navigate away — it is not persisted. The following categories may be stored persistently if you opt into storage features:</p>
                 <ul>
-                    <li>Your Torn API key</li>
-                    <li>Fetched Torn game data (cached for performance)</li>
-                    <li>UI preferences and settings</li>
-                    <li>Your analytics consent choice</li>
+                    <li>Your Torn user ID, display name, and faction ID — needed to associate records with you.</li>
+                    <li>Leave requests you submit — dates, reason, and status.</li>
+                    <li>Activity log events generated when you change storage settings or take leave actions.</li>
+                    <li>Personal stat snapshots — battle stats and networth history — for progression tracking.</li>
+                    <li>Faction organized crime sync data — historical OC records for officer-level analytics.</li>
                 </ul>
-                <p>Certain features that involve shared faction coordination (such as queue management, alerts, or revive tracking) may send limited operational data to TornPanel servers or subdomains. This data may include your Torn username and action metadata. It is used only to enable those shared features and is not retained beyond what is needed for operational purposes.</p>
-                <p>Operational server logs may temporarily include usernames, request metadata, and timestamps for reliability, debugging, and abuse prevention. These logs are not sold or shared.</p>
-                <p>You can clear locally stored data at any time by logging out, clearing your browser's local storage, or revoking your API key in Torn.</p>
+                <p><strong>What is never stored on our servers:</strong> your raw Torn API key, your Torn password, financial transaction data, private messages, or any data you have not explicitly opted into storing.</p>
             </div>
 
             <div class="policy-section">
-                <h2 class="section-title">5. Data Sharing</h2>
+                <h2 class="section-title">5. Where Data Is Stored</h2>
+                <h3 style="margin-top:12px;font-size:1em;color:#d4d4d8;">Your browser (localStorage)</h3>
+                <p>Your Torn API key, session JWT, notification preferences, analytics consent choice, and storage opt-in flag are held in your browser's localStorage. This data does not leave your device unless explicitly transmitted to Torn's API or TornPanel's Supabase proxy for the purpose of fetching data.</p>
+
+                <h3 style="margin-top:12px;font-size:1em;color:#d4d4d8;">Supabase (opt-in, cloud database)</h3>
+                <p>If you enable storage features, certain records are written to <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer" style="color:#6ee7b7;">Supabase</a>, a third-party cloud database provider. TornPanel uses Supabase's row-level security so each user's data can only be read by that user and their faction's officers. Service-role access is limited to server-side edge functions and is not exposed to any user.</p>
+
+                <h3 style="margin-top:12px;font-size:1em;color:#d4d4d8;">Server-side encrypted storage (planned — notifications)</h3>
+                <p>When Discord notification delivery is enabled, your webhook URL will be stored encrypted in a server-side secrets store. It will never be returned to or held in the frontend. This infrastructure is not yet deployed.</p>
+            </div>
+
+            <div class="policy-section">
+                <h2 class="section-title">6. Who Can Access Your Data</h2>
+                <div style="overflow-x:auto;">
+                <table style="width:100%;border-collapse:collapse;font-size:0.85em;min-width:500px;">
+                    <thead>
+                        <tr style="border-bottom:1px solid #3f3f46;background:#18181b;">
+                            <th style="text-align:left;padding:8px 10px;color:#a1a1aa;">Data type</th>
+                            <th style="text-align:left;padding:8px 10px;color:#a1a1aa;">You</th>
+                            <th style="text-align:left;padding:8px 10px;color:#a1a1aa;">Faction officers</th>
+                            <th style="text-align:left;padding:8px 10px;color:#a1a1aa;">Service owners</th>
+                            <th style="text-align:left;padding:8px 10px;color:#a1a1aa;">Third parties</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom:1px solid #27272a;">
+                            <td style="padding:8px 10px;color:#d4d4d8;font-weight:500;">API key</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">✓ (browser only)</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">✗</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">✗</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">✗</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid #27272a;">
+                            <td style="padding:8px 10px;color:#d4d4d8;font-weight:500;">Session JWT</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">✓ (browser only)</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">✗</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">✗</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">✗</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid #27272a;">
+                            <td style="padding:8px 10px;color:#d4d4d8;font-weight:500;">Live Torn API data</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">✓ (in-session)</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">✗</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">✗</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">✗</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid #27272a;">
+                            <td style="padding:8px 10px;color:#d4d4d8;font-weight:500;">Leave requests</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">✓</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">✓ (same faction)</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">Read-only for support</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">✗</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid #27272a;">
+                            <td style="padding:8px 10px;color:#d4d4d8;font-weight:500;">Activity log events</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">✓</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">✓ (same faction)</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">Read-only for support</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">✗</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid #27272a;">
+                            <td style="padding:8px 10px;color:#d4d4d8;font-weight:500;">Personal stat snapshots</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">✓</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">✗</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">Read-only for support</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">✗</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid #27272a;">
+                            <td style="padding:8px 10px;color:#d4d4d8;font-weight:500;">OC sync cache</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">✓ (officers)</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">✓</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">Read-only for support</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">✗</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid #27272a;">
+                            <td style="padding:8px 10px;color:#d4d4d8;font-weight:500;">Discord webhook URL</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">✗ (server-only)</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">✗</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">Encrypted only</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">✗</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid #27272a;">
+                            <td style="padding:8px 10px;color:#d4d4d8;font-weight:500;">Analytics (Firebase / Clarity)</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">Aggregate only</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">✗</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">Aggregate only</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">Firebase / Microsoft</td>
+                        </tr>
+                        <tr>
+                            <td style="padding:8px 10px;color:#d4d4d8;font-weight:500;">Error data (Sentry)</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">✗</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">✗</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">Error details only</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">Sentry (Functional Software)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+                <p style="margin-top:10px;">Human access by service owners is limited to support and maintenance only. We do not sell, rent, or share your data with advertisers or unrelated third parties.</p>
+            </div>
+
+            <div class="policy-section">
+                <h2 class="section-title">7. How Long Data Is Kept</h2>
                 <ul>
-                    <li>Your API key is never sold or shared with third parties.</li>
-                    <li>No personal data is sold for advertising or marketing purposes.</li>
-                    <li>Shared faction features (for example, chain queues or coordinated alerts) may make your Torn username and action data visible to other authorized faction participants using the same feature. This is the intended behavior of those collaboration tools.</li>
-                    <li>Analytics tools (Firebase Analytics, Microsoft Clarity) may receive anonymized usage data in regions where you have consented to tracking. See Section 7 for details.</li>
-                    <li>Error monitoring (Sentry) processes technical error data to support app stability.</li>
+                    <li><strong>API key and session JWT</strong> — held in your browser until you log out. Never retained server-side.</li>
+                    <li><strong>Live API data</strong> — held in-memory for the current session only. Not persisted.</li>
+                    <li><strong>Supabase opt-in records</strong> (user profile, leave requests, activity log) — retained until you request deletion.</li>
+                    <li><strong>Personal stat snapshots</strong> — retained until you request deletion.</li>
+                    <li><strong>Faction OC sync cache</strong> — retained for the faction until removed on request.</li>
+                    <li><strong>Notification preferences</strong> — stored locally in your browser until you clear them or log out.</li>
+                    <li><strong>Discord webhook URL (when deployed)</strong> — retained until you remove it or delete your account data.</li>
+                    <li><strong>Analytics and error data</strong> — subject to retention policies of Firebase, Microsoft Clarity, and Sentry respectively.</li>
                 </ul>
             </div>
 
             <div class="policy-section">
-                <h2 class="section-title">6. Network Requests and Shared Features</h2>
-                <p>TornPanel communicates with the following external endpoints:</p>
+                <h2 class="section-title">8. Requesting Deletion</h2>
+                <p>You can delete all TornPanel-stored data at any time. Go to <strong>Settings → Danger Zone → Delete My Data</strong>. This will:</p>
                 <ul>
-                    <li><strong>api.torn.com</strong> - Torn's official API. Requests include your API key and are made directly from your browser.</li>
-                    <li><strong>api.tornpanel.online</strong> - TornPanel's own API, used for shared faction features such as chain queues, revive coordination, and shared alerts. Requests to this endpoint may include your Torn username and action metadata. No API key is transmitted to this endpoint.</li>
-                    <li><strong>Supabase (hosted database)</strong> - Used for certain shared faction features that require persistent state across faction members. Only the data necessary for those features is stored.</li>
-                    <li><strong>Third-party analytics services</strong> - Firebase Analytics and Microsoft Clarity receive anonymized usage data in regions where consent has been given. See Section 7.</li>
-                    <li><strong>Sentry</strong> - Receives error and crash data for stability monitoring. See Section 7.</li>
+                    <li>Delete your user profile row from Supabase.</li>
+                    <li>Delete all leave requests associated with your user ID.</li>
+                    <li>Delete your activity log events.</li>
+                    <li>Delete personal stat snapshots tied to your user ID.</li>
+                    <li>Clear your local storage opt-in flag.</li>
+                </ul>
+                <p>Deletion is verified server-side using your Torn API key. No other user can delete your data. After deletion, features that depend on stored data will not function until you opt in again.</p>
+                <p>To request deletion of data not covered by the in-app tool, contact us via the details in Section 13.</p>
+            </div>
+
+            <div class="policy-section">
+                <h2 class="section-title">9. Third-Party Services</h2>
+                <div style="overflow-x:auto;">
+                <table style="width:100%;border-collapse:collapse;font-size:0.85em;min-width:500px;">
+                    <thead>
+                        <tr style="border-bottom:1px solid #3f3f46;background:#18181b;">
+                            <th style="text-align:left;padding:8px 10px;color:#a1a1aa;">Service</th>
+                            <th style="text-align:left;padding:8px 10px;color:#a1a1aa;">Purpose</th>
+                            <th style="text-align:left;padding:8px 10px;color:#a1a1aa;">What it receives</th>
+                            <th style="text-align:left;padding:8px 10px;color:#a1a1aa;">Consent gated</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom:1px solid #27272a;">
+                            <td style="padding:8px 10px;color:#d4d4d8;font-weight:500;">Torn API</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">Data source</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">Your API key (per request)</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">No — required to use the app</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid #27272a;">
+                            <td style="padding:8px 10px;color:#d4d4d8;font-weight:500;">Supabase</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">Cloud database</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">Opted-in user / faction records</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">Yes — opt-in required</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid #27272a;">
+                            <td style="padding:8px 10px;color:#d4d4d8;font-weight:500;">Firebase Analytics</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">Usage analytics</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">Anonymized page / feature events</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">Yes — consent required in EU/EEA/UK/CH</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid #27272a;">
+                            <td style="padding:8px 10px;color:#d4d4d8;font-weight:500;">Microsoft Clarity</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">Session behaviour analytics</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">Page interactions (inputs masked)</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">Yes — consent required in EU/EEA/UK/CH</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid #27272a;">
+                            <td style="padding:8px 10px;color:#d4d4d8;font-weight:500;">Sentry</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">Error monitoring</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">JavaScript error details</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">No — always active, no PII sent intentionally</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid #27272a;">
+                            <td style="padding:8px 10px;color:#d4d4d8;font-weight:500;">FFScouter</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">Fair-fight stats enrichment</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">Torn player IDs (no API key)</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">No — used only for enrichment</td>
+                        </tr>
+                        <tr style="border-bottom:1px solid #27272a;">
+                            <td style="padding:8px 10px;color:#d4d4d8;font-weight:500;">Discord</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">Notification delivery</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">Faction alert message content</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">Yes — opt-in when webhook is configured</td>
+                        </tr>
+                        <tr>
+                            <td style="padding:8px 10px;color:#d4d4d8;font-weight:500;">Vercel</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">Hosting and deployment</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">Standard web request metadata</td>
+                            <td style="padding:8px 10px;color:#a1a1aa;">No — infrastructure provider</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+
+            <div class="policy-section">
+                <h2 class="section-title">10. Discord Notifications</h2>
+                <p>The Notifications panel lets you configure alerts for faction events (chain timer warnings, OC idleness, ranked war starts) delivered via Discord webhook.</p>
+                <p><strong>Current state:</strong> Notification preferences are stored only in your browser. The backend delivery infrastructure is not yet live. No alerts are sent and no remote storage of webhook URLs is occurring. The in-app panel reflects this clearly.</p>
+                <p><strong>When the backend is deployed:</strong></p>
+                <ul>
+                    <li>Your Discord webhook URL will be stored server-side, encrypted at rest, and will not be accessible from the frontend after submission.</li>
+                    <li>Your Torn API key will be used server-side to query event data and will not be persisted.</li>
+                    <li>Alert messages sent to your Discord channel will contain Torn-derived faction data visible to all members of that channel. You are responsible for configuring channel access appropriately.</li>
                 </ul>
             </div>
 
             <div class="policy-section">
-                <h2 class="section-title">7. Cookies and Tracking Technologies</h2>
-                <p>TornPanel uses the following tracking tools. In regions where consent is required (EU/EEA, UK, Switzerland, and unknown regions), Firebase Analytics and Microsoft Clarity are not activated until you accept the consent banner.</p>
+                <h2 class="section-title">11. Analytics and Monitoring</h2>
+                <h3 style="margin-top:12px;font-size:1em;color:#d4d4d8;">Firebase Analytics (consent-gated)</h3>
+                <p>Used to understand aggregate feature usage. No Torn data, API keys, or personally identifiable information is intentionally included in these events. Disabled by default in EU/EEA/UK/CH regions until you consent. Toggle via <strong>Settings → Privacy &amp; Analytics</strong>.</p>
+                <h3 style="margin-top:12px;font-size:1em;color:#d4d4d8;">Microsoft Clarity (consent-gated)</h3>
+                <p>Records session interactions to identify UX friction. Sensitive input fields are masked. Gated behind consent in protected regions and can be disabled in Settings.</p>
+                <h3 style="margin-top:12px;font-size:1em;color:#d4d4d8;">Sentry (always active)</h3>
+                <p>Captures unhandled JavaScript exceptions for stability monitoring. Not consent-gated because it is a reliability tool, not a tracking tool. API keys and Torn user data are not intentionally included in error payloads.</p>
+            </div>
 
-                <h3 style="margin-top:12px;font-size:1em;color:#d4d4d8;">Firebase Analytics (Google)</h3>
+            <div class="policy-section">
+                <h2 class="section-title">12. Security</h2>
                 <ul>
-                    <li>Purpose: Understand how users navigate the app, which features are used, and how the app performs.</li>
-                    <li>Data: Anonymized usage events, page views, session counts, general browser/device category. No personally identifying information is collected by TornPanel through this tool.</li>
-                    <li>Consent gating: Not loaded before consent in strict regions.</li>
-                    <li>Provider policy: <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer" style="color:#6ee7b7;">firebase.google.com/support/privacy</a></li>
+                    <li>Supabase row-level security restricts each user's data to that user and their faction's officers.</li>
+                    <li>Session JWTs are short-lived (12 hours), signed with a server secret, and contain only identity claims — never raw API keys.</li>
+                    <li>API keys are transmitted over HTTPS only and are never logged server-side.</li>
+                    <li>Discord webhook URLs (when deployed) will be stored encrypted and never returned to the frontend.</li>
+                    <li>The Supabase service role key is only available inside server-side edge functions and is not exposed to clients.</li>
                 </ul>
+                <p>No system is perfectly secure. We cannot guarantee absolute security of data in transit or at rest.</p>
+            </div>
 
-                <h3 style="margin-top:12px;font-size:1em;color:#d4d4d8;">Microsoft Clarity</h3>
+            <div class="policy-section">
+                <h2 class="section-title">13. Your Rights</h2>
                 <ul>
-                    <li>Purpose: Session recording and heatmaps to understand usability and identify UX issues.</li>
-                    <li>Data: Mouse movements, clicks, scroll behavior, and general navigation patterns. Sensitive inputs such as API keys are masked.</li>
-                    <li>Consent gating: Not loaded before consent in strict regions.</li>
-                    <li>Provider policy: <a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank" rel="noopener noreferrer" style="color:#6ee7b7;">privacy.microsoft.com</a></li>
-                </ul>
-
-                <h3 style="margin-top:12px;font-size:1em;color:#d4d4d8;">Sentry</h3>
-                <ul>
-                    <li>Purpose: Error monitoring and crash reporting to maintain app stability. This tool is necessary for service reliability.</li>
-                    <li>Data: JavaScript errors, stack traces, browser version, and general session context. No Torn game data or API keys are included in error reports.</li>
-                    <li>Consent gating: Sentry remains active regardless of analytics consent as it is necessary for stability, not tracking.</li>
-                    <li>Provider policy: <a href="https://sentry.io/privacy/" target="_blank" rel="noopener noreferrer" style="color:#6ee7b7;">sentry.io/privacy</a></li>
+                    <li><strong>Right to know</strong> — This policy and the disclosure tables above document what is collected and how it is used.</li>
+                    <li><strong>Right to erasure</strong> — Delete all stored data via Settings → Danger Zone → Delete My Data.</li>
+                    <li><strong>Right to object</strong> — Opt out of analytics at any time via Settings → Privacy &amp; Analytics. Opt out of Supabase storage via Settings → Storage.</li>
+                    <li><strong>Right to complain</strong> — If you believe your data is being mishandled, you can report concerns to Torn staff: <a href="https://www.torn.com/profiles.php?XID=IceBlueFire" target="_blank" rel="noopener noreferrer" style="color:#6ee7b7;">IceBlueFire</a> (Torn Script Moderation Officer) or <a href="https://www.torn.com/profiles.php?XID=Bogie" target="_blank" rel="noopener noreferrer" style="color:#6ee7b7;">Bogie</a> (Torn Community Manager).</li>
                 </ul>
             </div>
 
             <div class="policy-section">
-                <h2 class="section-title">8. Third-Party Services</h2>
-                <p>TornPanel relies on the following third-party services. Each operates under its own privacy policy and terms.</p>
-                <ul>
-                    <li><strong>Torn (torn.com)</strong> - Game data API. Your API key is used to make requests directly to Torn.</li>
-                    <li><strong>Google Firebase</strong> - Analytics and performance monitoring.</li>
-                    <li><strong>Microsoft Clarity</strong> - Session analytics and heatmaps.</li>
-                    <li><strong>Sentry</strong> - Error and crash monitoring.</li>
-                    <li><strong>Supabase</strong> - Database infrastructure for shared faction features.</li>
-                    <li><strong>Vercel</strong> - Hosting and deployment infrastructure for tornpanel.online.</li>
-                </ul>
-                <p>TornPanel is not responsible for the data practices of these third-party providers.</p>
+                <h2 class="section-title">14. Changes to This Policy</h2>
+                <p>We may update this policy when new features are added or existing data practices change. The date at the top reflects the most recent revision. Continued use of TornPanel after an update constitutes acceptance of the revised terms.</p>
             </div>
 
             <div class="policy-section">
-                <h2 class="section-title">9. International Users</h2>
-                <p>TornPanel serves users globally. If you are located in the EU, EEA, United Kingdom, or Switzerland, the following rights apply to you under GDPR, UK GDPR, or Swiss privacy law:</p>
-                <ul>
-                    <li><strong>Right of access</strong> - You may request information about what data is held about you.</li>
-                    <li><strong>Right to deletion</strong> - You may request deletion of your data where it is held by TornPanel systems.</li>
-                    <li><strong>Right to restriction</strong> - You may request that processing of your data be restricted.</li>
-                    <li><strong>Right to object</strong> - You may object to processing based on legitimate interest.</li>
-                    <li><strong>Right to withdraw consent</strong> - If you accepted analytics tracking, you can change your choice at any time using the Privacy Settings link in the app.</li>
-                </ul>
-                <p>For requests, contact: <a href="mailto:llsdevsteam@gmail.com" style="color:#6ee7b7;">llsdevsteam@gmail.com</a></p>
-                <p>Because most data is stored locally in your browser, the most direct way to manage your data is to clear your browser's local storage or revoke your API key in Torn.</p>
-            </div>
-
-            <div class="policy-section">
-                <h2 class="section-title">10. California Privacy Rights (CCPA)</h2>
-                <p>If you are a California resident, you have the following rights under the California Consumer Privacy Act:</p>
-                <ul>
-                    <li><strong>Right to know</strong> - You may request disclosure of the categories and specific pieces of personal information collected about you.</li>
-                    <li><strong>Right to delete</strong> - You may request deletion of personal information we have collected from you.</li>
-                    <li><strong>Right to opt out</strong> - You may opt out of the sale of personal information. TornPanel does not sell personal information.</li>
-                </ul>
-                <p>To exercise these rights, contact: <a href="mailto:llsdevsteam@gmail.com" style="color:#6ee7b7;">llsdevsteam@gmail.com</a></p>
-            </div>
-
-            <div class="policy-section">
-                <h2 class="section-title">11. Consent and Tracking Control</h2>
-                <p>Users in regions that require consent under GDPR, UK GDPR, Swiss privacy law, or equivalent legislation will see a consent banner on first visit. This includes all EU/EEA countries, the United Kingdom, Switzerland, and any region that cannot be determined.</p>
-                <ul>
-                    <li>If you accept, Firebase Analytics and Microsoft Clarity are initialized and will collect anonymized usage data.</li>
-                    <li>If you decline, those tools are not loaded. Sentry remains active as it is necessary for app stability.</li>
-                    <li>You can reopen your privacy settings and change your choice at any time using the Privacy Settings link displayed in the app.</li>
-                    <li>Users in non-strict regions have analytics initialized by default, consistent with applicable law.</li>
-                </ul>
-            </div>
-
-            <div class="policy-section">
-                <h2 class="section-title">12. User Control</h2>
-                <p>You have the following controls available at any time:</p>
-                <ul>
-                    <li><strong>Revoke your API key</strong> - Log into Torn and revoke or rotate any API key you have provided to TornPanel. This immediately stops further API requests.</li>
-                    <li><strong>Log out</strong> - Removes your session data from TornPanel.</li>
-                    <li><strong>Clear local storage</strong> - Removes all locally stored data including your API key, cached Torn data, and preferences.</li>
-                    <li><strong>Change analytics consent</strong> - Use the Privacy Settings link in the app to reopen the consent prompt and change your choice.</li>
-                </ul>
-            </div>
-
-            <div class="policy-section">
-                <h2 class="section-title">13. Contact</h2>
+                <h2 class="section-title">15. Contact</h2>
                 <p>For questions, data requests, or concerns about this policy:</p>
                 <ul>
                     <li>Email: <a href="mailto:llsdevsteam@gmail.com" style="color:#6ee7b7;">llsdevsteam@gmail.com</a></li>
                     <li>Discord: <a href="https://discord.com/users/546372358902906910" target="_blank" rel="noopener noreferrer" style="color:#6ee7b7;">discord.com/users/546372358902906910</a></li>
+                    <li>Torn: <a href="https://www.torn.com/profiles.php?XID=3468036" target="_blank" rel="noopener noreferrer" style="color:#6ee7b7;">Torn Profile</a></li>
                 </ul>
+                <p style="color:#71717a;font-size:0.85em;">Lost Light Studios · tornpanel.online</p>
             </div>
         `
     },
